@@ -9,31 +9,53 @@
   <title>Frontend Mentor | Order summary card</title>
 
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/simple-grid.scss">
+  <link rel="stylesheet" href="styles/simple-grid.css">
 
 </head>
 <body>
-  <div class="container">
   
-    <img src="images/illustration-hero.svg" class="main-img">
-  <h2>Order Summary</h2>
+  <div class="container">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-    <div class="inner-section">
-      <img src="images/icon-music.svg" class="music-icon">
-      Annual Plan
-      $59.99/year
+    <div class="row">
+      <img src="images/illustration-hero.svg" class="main-img">
     </div>
 
-  Change
-  <button>Proceed to Payment</button>
-  <button class="btn-cancel">Cancel Order</button>
+    <div class="sub-container">
+      <div class="row">
+        <div class="col-12">
+        <h2>Order Summary</h2>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        </div>
+      </div>
 
+      <div class="row inner-section">
+        <div class="col-3">
+          <img src="images/icon-music.svg" class="music-icon">
+        </div>
+        <div class="col-6 left">
+          <p><strong>Annual Plan</strong></p>
+          <p>$59.99/year</p>
+        </div>
+        <div class="col-3">
+          <a><p class="change-btn">Change</p></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <button>Proceed to Payment</button>
+      </div>
+
+      <div class="row">
+        <a><p class="cancel-btn">Cancel Order</p></a>
+      </div>
+    </div>
+    
   </div>
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hermione</a>.
+    Coded by <a href="https://hermione.hashnode.dev">Hermione</a>.
   </div>
 </body>
 </html>

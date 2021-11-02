@@ -1,3 +1,8 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 @media only screen and (max-width: 767px) {
@@ -7,7 +12,9 @@
     background-image: url('../images/pattern-background-mobile.svg');
     }
 }
-
+html {
+    height:100vh;
+}
 body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
@@ -16,13 +23,108 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: hsl(225, 100%, 98%);
+    background-color: hsl(225, 100%, 94%);
+    /*height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;*/
+    /*margin: 25% 0 25% 0;
+    margin: 25rem 0 25rem 0;
+    justify-content: center;
+    align-items: center;
+    padding: 25% 0 25% 0;*/
+    user-select: none;
+    padding-top: 30px;
+
 }
 
+.container {
+    /*
+    max-width: 80%;
+    width:500px;
+    margin: 50px auto;
+    */
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 450px;
+    width: 90%;
+    /*margin: auto;*/
+    padding-bottom:10px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    /*height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.sub-container {
+    padding: 0 5% 0 5%;
+}
+
+.inner-section {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    width: 100%; /* TRBL*/
+    margin: 5% 0 5% 0;
+}
+.left {
+    text-align: left;
+}
+
+.main-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.music-icon {
+    width: 35%;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+button {
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: #ffffff;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px solid;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 28px 10px -6px rgba(114, 128, 167, 0.2);
+}
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+.change-btn {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.change-btn:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.cancel-btn {
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-.inner-section {
-    background-color: hsl(225, 100%, 98%);
-}
 
